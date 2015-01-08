@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-
-# Гем для Ruby on Rails
 gem 'rails', '4.2.0'
 
 # Взаимодейтсвие с базой данных MySQL
@@ -11,41 +9,31 @@ gem 'migration_comments', '~> 0.3.2'
 # Поддержка беззнаковых типов столбцов базы данных MySQL (UNSIGNED)
 gem 'activerecord-mysql-unsigned'
 
-# Use SCSS for stylesheets
+# SCSS для каскадных таблиц стилей
 gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
+# Uglifier-минификатор для JavaScript-файлов
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
+# Язык CoffeeScript, позволяющий писать JavaScript-файлы в ruby-стиле
 gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# Поддержка JavaScript на стороне севера (https://github.com/sstephenson/execjs#readme)
 gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
+# Библиотека jQuery
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+# Turbolinks: заменяет только содержимое body и META-тэг title при переходе по ссылкам (https://github.com/rails/turbolinks)
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Конструктор для JSON APIs (https://github.com/rails/jbuilder)
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
+# Генерирует документацию в doc/api (bundle exec rake doc:rails)
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Генератор аннотаций для моделей, запускается одноименной командой
   gem 'annotate'
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Отладчик, позволяющий создавать точки останова и вывода отладочной консоли
   gem 'byebug'
-  # Access an IRB console on exception pages or by using <%= console %> in views
+  # Досту к IRB-консоли при возникновении исключений или выводе конструкции <%= console %> в представлении
   gem 'web-console', '~> 2.0'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # Ускоряет работу приложения (тестов, rake-задача), за счет выполнения его в фоновом режиме (https://github.com/rails/spring)
   gem 'spring'
 end
-
