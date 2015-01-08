@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Язык CoffeeScript, позволяющий писать JavaScript-файлы в ruby-стиле
 gem 'coffee-rails', '~> 4.1.0'
-# Поддержка JavaScript на стороне севера (https://github.com/sstephenson/execjs#readme)
+# Поддержка JavaScript на стороне сервера (https://github.com/sstephenson/execjs#readme)
 gem 'therubyracer', platforms: :ruby
 
 # Библиотека jQuery
