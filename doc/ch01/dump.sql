@@ -1,0 +1,11 @@
+CREATE TABLE langs (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO langs VALUES (1, "C++");
+
+INSERT INTO langs VALUES (2, "Ruby"), (3, "Python");
+
+INSERT INTO langs VALUES (NULL, "PHP");
