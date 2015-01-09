@@ -38,5 +38,7 @@ http://192.168.122.2:3000
 
 ## Занятия
 ### Занятие 1
-[Артем Нистратов. Обзор Ruby on Rails framework](http://slides.com/go-promo/first#/)
-[Игорь Симдянов. Обзор базы данных MySQL](https://oc.life.ru/public.php?service=files&t=d13df9fb18c540778e2c62f2b8106191)
+
+* [Артем Нистратов. Обзор Ruby on Rails framework](http://slides.com/go-promo/first#/)
+
+* [Игорь Симдянов. Обзор базы данных MySQL](https://oc.life.ru/public.php?service=files&t=d13df9fb18c540778e2c62f2b8106191)
