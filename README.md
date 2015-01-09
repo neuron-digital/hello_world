@@ -1,21 +1,42 @@
 # hello_world
-Учебный проект - проект на Ruby on Rails посвященный мини-сайту, посвященному различным языкам программирования. В качестве базы данных используется СУБД MySQL.
+Учебный проект - проект на Ruby on Rails, мини-сайт, посвященный различным языкам программирования. В качестве базы данных используется СУБД MySQL.
 
+## Настройка проекта
 Для работы с проектом следует выполнить ряд шагов по настройке виртуальной машины под Ubuntu
 Установка дополнительных библиотек
-<pre>sudo apt-get install libmysqlclient-dev libffi-dev libxslt1-dev libxml2-dev</pre>
+```
+sudo apt-get install libmysqlclient-dev libffi-dev libxslt1-dev libxml2-dev
+```
 Установка MySQL
-<pre>sudo apt-get install mysql-server mysql-client</pre>
+```
+sudo apt-get install mysql-server mysql-client
+```
 Создание MySQL-пользователя
-<pre>mysql> CREATE USER dev IDENTIFIED BY '321321';
-mysql> GRANT ALL ON *.* TO dev;</pre>
+```
+mysql> CREATE USER dev IDENTIFIED BY '321321';
+mysql> GRANT ALL ON *.* TO dev;
+```
 Выполнить команду bundle, которая загрузит необходимые для работы проекта гемы (без sudo)
-<pre>bundle</pre>
+```
+bundle
+```
 
+## Запуск
 Для запуска консоли, в корне проекта следует выполнить команду
-<pre>rails c</pre>
+```
+rails c
+```
 Для запуска сервера, в корне проекта следует выполнить команду
-<pre>rails s --binding=192.168.122.2</pre>
+```
+rails s --binding=192.168.122.2
+```
 После запуска сервера, проект будет доступен по адресу
-<pre>http://192.168.122.2:3000</pre>
+```
+http://192.168.122.2:3000
+```
 В качестве IP-адреса следует указывать IP-адрес своей виртуалки.
+
+## Занятия
+### Занятие 1
+[Артем Нистратов. Обзор Ruby on Rails framework](http://slides.com/go-promo/first#/)
+[Игорь Симдянов. Обзор базы данных MySQL](https://oc.life.ru/public.php?service=files&t=d13df9fb18c540778e2c62f2b8106191)
