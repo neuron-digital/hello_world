@@ -51,3 +51,4 @@ http://192.168.122.2:3000
 
 * [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных](https://oc.life.ru/public.php?service=files&t=517d5eef32fd9e55f1c8c77f59bab003)
 * [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных (pptx-вариант)](https://oc.life.ru/public.php?service=files&t=2f5228be3c6d89d6a0cd165491916341)
+* [Артем Нистратов. ActiveRecord часть первая](https://slides.com/go-promo/second)
