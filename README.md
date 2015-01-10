@@ -41,13 +41,13 @@ http://192.168.122.2:3000
 
 * [Артем Нистратов. Обзор Ruby on Rails framework](http://slides.com/go-promo/first#/)
 
-* [Игорь Симдянов. Обзор базы данных MySQL](https://oc.life.ru/public.php?service=files&t=d13df9fb18c540778e2c62f2b8106191)
-* [Игорь Симдянов. Обзор базы данных MySQL (pptx-вариант)](https://oc.life.ru/public.php?service=files&t=00ec3526a96f99273bef5e98ea5fa2f6)
+* [Игорь Симдянов. Обзор базы данных MySQL](https://oc.life.ru/public.php?service=files&t=53f4ba748571321621314af5f34cb761)
+* [Игорь Симдянов. Обзор базы данных MySQL (pptx-вариант)](https://oc.life.ru/public.php?service=files&t=14f042ff297964277f36b72e6ab185b1)
 
 
 * [Алексей Авдеев. Фронтенд. Инструменты](https://www.dropbox.com/s/ojpfx6bfvnixoo8/01%20%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.pptx?dl=0)
 
 ### Занятие 2
 
-* [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных](https://oc.life.ru/public.php?service=files&t=414f92adadc7945f36e9eb12e6e6664d)
-* [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных (pptx-вариант)](https://oc.life.ru/public.php?service=files&t=afa1c89cd9f5049e6b89f199ab9e8682)
+* [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных](https://oc.life.ru/public.php?service=files&t=517d5eef32fd9e55f1c8c77f59bab003)
+* [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных (pptx-вариант)](https://oc.life.ru/public.php?service=files&t=2f5228be3c6d89d6a0cd165491916341)
