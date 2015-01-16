@@ -1,3 +1,3 @@
 class Lang < ActiveRecord::Base
-  has_and_belongs_to_many :snippets, join_table: :snippets_langs
+  has_and_belongs_to_many :snippets, join_table: :snippet_langs
 end

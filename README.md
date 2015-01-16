@@ -48,3 +48,7 @@ http://192.168.122.2:3000
 * [Игорь Симдянов. Взаимодействие Ruby on Rails с базой данных](https://docs.google.com/presentation/d/1plJYhtkX3eQVWwbEJJ1GEcg8knVzK0eGUUPx24oZhWc/edit?usp=sharing)
 * [Артем Нистратов. ActiveRecord часть первая](https://slides.com/go-promo/second)
 * [Алексей Авдеев. Фронтенд. HTML5](https://www.dropbox.com/s/m595llw2g86jxyu/02%20%D0%A4%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4%20HTML5.pptx?dl=0)
+
+### Занятие 3
+
+* [Игорь Симдянов. Типы данных. Кодировки и сопоставления. UTF-8. Время.](https://docs.google.com/presentation/d/1TEeKQHqnHtLD2_n6Vj45wA9c1iKtgVgdWH6qIFF3LjM/edit?usp=sharing)
