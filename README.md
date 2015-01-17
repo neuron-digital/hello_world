@@ -52,3 +52,7 @@ http://192.168.122.2:3000
 ### Занятие 3
 
 * [Игорь Симдянов. Типы данных. Кодировки и сопоставления. UTF-8. Время.](https://docs.google.com/presentation/d/1TEeKQHqnHtLD2_n6Vj45wA9c1iKtgVgdWH6qIFF3LjM/edit?usp=sharing)
+
+### Занятие 4
+
+* [Игорь Симдянов. Запросы SELECT, INSERT, UPDATE, DELETE](https://docs.google.com/presentation/d/1gl6Vrb7pUGzxa6tfxnQDOQY24A2a4ZuF_mSdJfkFaYg/edit?usp=sharing)
