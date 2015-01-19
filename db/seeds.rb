@@ -34,6 +34,36 @@ def snippets
   end
 end
 
+# Заполняем логотипы языков программирования и пользователей
+def images
+  User.all.each do |usr|
+    usr.build_image(
+      upload_file_name: 'usr_logo.jpg',
+      upload_file_path: Rails.root.join('public', 'images', 'users')
+    )
+    usr.save
+  end
+
+  langs = {
+    'C++' => 'cpp_logo.png',
+    'Ruby' => 'ruby_logo.png',
+    'Python' => 'python_logo.png',
+  }
+
+  langs.each do |lang, logo|
+    lng = Lang.where(title: lang).first
+    if lng.present?
+      lng.build_image(
+        upload_file_name: logo,
+        upload_file_path: Rails.root.join('public', 'images', 'langs')
+      )
+      lng.save
+    end
+  end
+
+end
+
 langs
 users
 snippets
+images
