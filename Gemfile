@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
-
+gem 'will_paginate'
 # Взаимодейтсвие с базой данных MySQL
 gem 'mysql2'
 # Комментарии к таблицам и столбцам базы данных

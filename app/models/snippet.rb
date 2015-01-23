@@ -1,4 +1,9 @@
 class Snippet < ActiveRecord::Base
   belongs_to :user
   has_and_belongs_to_many :langs, join_table: :snippet_langs
+
+  enum visibility: [:_public, :_private]
+
+  scope :with_public_access, -> { where visibility: visibilities[:_public] }
+  scope :for_main,           -> { with_public_access.order created_at: :desc }
 end
