@@ -40,4 +40,26 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   # Ускоряет работу приложения (тестов, rake-задача), за счет выполнения его в фоновом режиме (https://github.com/rails/spring)
   gem 'spring'
+  # Создание произвольных текстов (для seeds.rb)
+  gem 'faker'
+end
+
+group :test do
+  # Вместо традиционных тестов, используем rspec
+  gem 'rspec'
+  gem 'rspec-rails'
+  # Определяем покрытие тестов
+  gem 'simplecov', require: false, group: :test
+  # Вместо фикстур, используем фабричный способ формирования моделей
+  gem 'factory_girl_rails'
+  # Дополнительные матчеры для тестирования связей моделей 
+  gem 'shoulda-matchers'
+  # Эмуляция действий пользователей
+  gem 'capybara'
+  # Ускорение работы тестов
+  gem 'spork'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  # Управление очисткой базы данных
+  gem 'database_cleaner'
 end
