@@ -59,3 +59,11 @@ http://192.168.122.2:3000
 * [Игорь Симдянов. Запросы SELECT, INSERT, UPDATE, DELETE](https://docs.google.com/presentation/d/1gl6Vrb7pUGzxa6tfxnQDOQY24A2a4ZuF_mSdJfkFaYg/edit?usp=sharing)
 * [Алексей Авдеев. Фронтенд. Семантика](https://www.dropbox.com/s/rmtw5juaef40qfx/04%20CSS%2C%20SASS%2C%20HAML.pptx?dl=0)
 * [Тестовый макет PSD](https://www.dropbox.com/s/q22g0h0bns4g36m/free_psd.psd?dl=0)
+
+### Занятие 5
+
+* [Игорь Симдянов. Связь таблиц друг с другом](https://docs.google.com/presentation/d/1pOmKSKTmI7TCkV1gtaJ2DE9iiO-P-uu0DuUMhESEI58/edit?usp=sharing)
+
+### Занятие 6
+
+* [Игорь Симдянов. Многотабличные запросы](https://docs.google.com/presentation/d/1YyJM74tGQ_UXJF_73L6CfNVNAaIDwwUMuuEhmZXwH04/edit?usp=sharing)
