@@ -1,6 +1,7 @@
 class Snippet < ActiveRecord::Base
   belongs_to :user
-  has_and_belongs_to_many :langs, join_table: :snippet_langs
+  has_many :snippet_langs
+  has_many :langs, through: :snippet_langs
 
   enum visibility: [:_public, :_private]
 
