@@ -26,6 +26,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # Генерирует документацию в doc/api (bundle exec rake doc:rails)
 gem 'sdoc', '~> 0.4.0', group: :doc
+# Haml-rails provides Haml generators for Rails 4.
+gem 'haml-rails'
+# bootstrap-sass is a Sass-powered version of Bootstrap, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass', '~> 3.3.3'
 
 group :development, :test do
   # Генератор аннотаций для моделей, запускается одноименной командой
