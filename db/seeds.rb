@@ -28,8 +28,20 @@ end
 def snippets
   usr = User.all
   Lang.all.each do |lng|
-    lng.snippets.build({title: "Первый сниппет по #{lng.title}", content: "Первый сниппет по #{lng.title}", user: usr.sample})
-    lng.snippets.build({title: "Второй сниппет по #{lng.title}", content: "Второй сниппет по #{lng.title}", user: usr.sample})
+    lng.snippets.build(
+      {
+        title: "Первый сниппет по #{lng.title}",
+        content: "Первый сниппет по #{lng.title}",
+        user: usr.sample
+      }
+    )
+    lng.snippets.build(
+      {
+        title: "Второй сниппет по #{lng.title}",
+        content: "Второй сниппет по #{lng.title}",
+        user: usr.sample
+      }
+    )
     lng.save
   end
 end
