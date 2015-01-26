@@ -67,3 +67,30 @@ http://192.168.122.2:3000
 ### Занятие 6
 
 * [Игорь Симдянов. Многотабличные запросы](https://docs.google.com/presentation/d/1YyJM74tGQ_UXJF_73L6CfNVNAaIDwwUMuuEhmZXwH04/edit?usp=sharing)
+
+## Список литературы
+
+### Ruby
+
+* Д. Флэнаган, Ю. Мацумото. Язык программирования Ruby. 2011
+* Хэл Фултон. Программирование на языке Ruby. 2013
+
+### Ruby on Rails
+
+* С. Руби, Д. Томас, Д. Хэнссон. Гибкая разработка веб-приложений в среде Rails, 4-е издание
+* Obie Fernandez, Kevin Faustino and Vitaly Kushner. The Rails 4 Way
+
+### MySQL
+
+* Джю Грофф, П. Вайнберг. SQL. 3-е издание. 2004
+* Максим Кузнецов, Игорь Симдянов. MySQL 5. 2006
+* Поль Дюбуа. MySQL. 2007
+* Билл Карвин. Программирование баз данных SQL. Типичные ошибки и их устранение. 2011
+* Паскаль Лерми, Стефан Фаро. Рефакторинг SQL-приложений. 2009
+* Baron Schwartz, Peter Zaitsev, Vadim Tkachenko, Jeremy D. Zawodny, Arjen Lentz, Derek J. Balling. MySQL. Оптимизация производительности. 2010.
+* Чарльз Белл, Мэтс Киндал, Ларс Талманн. Обеспечение высокой доступности систем на основе MySQL. 2011
+
+### Git
+
+* [Scott Chacon, Ben Straub. ProGit](http://git-scm.com/book/ru/)
+
