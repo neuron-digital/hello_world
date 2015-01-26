@@ -1,7 +1,11 @@
 class Snippet < ActiveRecord::Base
   belongs_to :user
+
   has_many :snippet_langs
   has_many :langs, through: :snippet_langs
+
+  has_many :snippet_rubrics
+  has_many :rubrics, through: :snippet_rubrics
 
   enum visibility: [:_public, :_private]
 
