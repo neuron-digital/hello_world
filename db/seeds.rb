@@ -11,6 +11,19 @@ def langs
   Lang.create(langs)
 end
 
+# Заполняем модель Rubric
+def rubrics
+  # Очищаем таблицу rubrics
+  Rubric.destroy_all
+  # Заполняем таблицу rubrics
+  rubrics = [
+    {title: 'C++'},
+    {title: 'Git'},
+    {title: 'OOP'}
+  ]
+  Rubric.create(rubrics)
+end
+
 # Заполняем модель User
 def users
   # Очищаем таблицу users
@@ -27,19 +40,22 @@ end
 # Заполняем модель Snippet
 def snippets
   usr = User.all
+  rbr = Rubric.all
   Lang.all.each do |lng|
     lng.snippets.build(
       {
         title: "Первый сниппет по #{lng.title}",
         content: "Первый сниппет по #{lng.title}",
-        user: usr.sample
+        user: usr.sample,
+        rubrics: [rbr.sample, rbr.sample]
       }
     )
     lng.snippets.build(
       {
         title: "Второй сниппет по #{lng.title}",
         content: "Второй сниппет по #{lng.title}",
-        user: usr.sample
+        user: usr.sample,
+        rubrics: [rbr.sample, rbr.sample]
       }
     )
     lng.save
@@ -76,6 +92,7 @@ def images
 end
 
 langs
+rubrics
 users
 snippets
 images
