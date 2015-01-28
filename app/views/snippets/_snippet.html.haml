@@ -1,7 +1,7 @@
 .col-lg-4
   .panel.panel-default
     .panel-heading
-      = snippet.title
+      = link_to snippet.title, snippet
     .panel-body
       - if snippet.user.present?
         %h4 Автор
