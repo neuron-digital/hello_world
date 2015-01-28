@@ -1,19 +1,18 @@
 .row
-  .col-xs-12#snippet-show
-    %div
-      Заголовок:
-      %b
-        = @snippet.title 
-    - if @snippet.langs.present?
-      %div
-        Языки:
-        %ul
-        - @snippet.langs.each do |lang|
-          %li
-            %div
-              = lang.title
-            %div
-              = image_tag "/images/langs/#{lang.image.upload_file_name}", size: '100x100'
-    %div
+  .col-xs-12
+    %h1.page-header= @snippet.title 
+    - if @snippet.content.present?
       %code
         = @snippet.content.html_safe
+    - if @snippet.langs.present?
+      .langs
+        %h4 Языки
+        %ul
+        - @snippet.langs.each do |lang|
+          %li= lang.title
+    - if @snippet.rubrics.present?
+      .rubrics
+        %h4 Рубрики
+        %ul
+        - @snippet.rubrics.each do |rubric|
+          %li= rubric.title

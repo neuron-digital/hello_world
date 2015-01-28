@@ -5,15 +5,15 @@ module CurrentUser
     end
 
     def create
-      @snippet = @user.snippets.create snippet_params
+      @snippet = @user.snippets.create snippets_params
     end
 
     def edit
-      @snippet = @user.snipepts.find params[:id]
+      @snippet = @user.snippets.find params[:id]
     end
 
     def update
-      @snipept = @user.snippets.find(params[:id]).update snippet_params
+      @snipept = @user.snippets.find(params[:id]).update snippets_params
     end
 
     def destroy

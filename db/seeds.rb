@@ -29,11 +29,13 @@ def users
   # Очищаем таблицу users
   User.destroy_all
   # Заполняем таблицу users
-  users = [
-    {first_name: 'Александр', last_name: 'Коробков', password: '321321'},
-    {first_name: 'Евгений', last_name: 'Понаморев', password: '321321'},
-    {first_name: 'Юрий', last_name: 'Кораблев', password: '321321'}
-  ]
+  users = (1..100).to_a.map do |user_number|
+    {
+      first_name: "Иван #{user_number}",
+      last_name: "Коробков #{user_number}",
+      password: '321321'
+    }
+  end
   User.create(users)
 end
 
@@ -42,22 +44,15 @@ def snippets
   usr = User.all
   rbr = Rubric.all
   Lang.all.each do |lng|
-    lng.snippets.build(
-      {
-        title: "Первый сниппет по #{lng.title}",
-        content: "Первый сниппет по #{lng.title}",
+    (50..100).to_a.sample.times do |snippet_number|
+      lng.snippets.build({
+        title: "Cниппет #{snippet_number} по #{lng.title}",
+        content: "Cниппет #{snippet_number} по #{lng.title}",
         user: usr.sample,
-        rubrics: [rbr.sample, rbr.sample]
-      }
-    )
-    lng.snippets.build(
-      {
-        title: "Второй сниппет по #{lng.title}",
-        content: "Второй сниппет по #{lng.title}",
-        user: usr.sample,
-        rubrics: [rbr.sample, rbr.sample]
-      }
-    )
+        rubrics: [rbr.sample, rbr.sample],
+        visibility: Snippet.visibilities[snippet_number % 3 == 0 ? :_private : :_public]
+      })
+    end
     lng.save
   end
 end

@@ -38,7 +38,7 @@ http://192.168.122.2:3000
 
 ## Занятия
 
-* [Глоссарий](https://docs.google.com/document/d/1fDWQXeMoPRCXCUxWehRfZs-jAAcKX8HGtuGeN35JqFU/edit?usp=sharing)
+* [Глоссарий](https://docs.google.com/document/d/1fDWQXeMoPRCXCUxWehRfZs-jAAcKX8HGtuGeN35JqFU)
 
 ### Занятие 1
 

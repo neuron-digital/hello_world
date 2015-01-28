@@ -6,27 +6,36 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Starter Template for Bootstrap
+    %title Snippets Control System
     = stylesheet_link_tag :application
+    = csrf_meta_tags
   %body
     %nav.navbar.navbar-inverse.navbar-fixed-top
-      .container
+      .container-fluid
         .navbar-header
           %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
             %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: root_path} Project name
-        #navbar.collapse.navbar-collapse
-          %ul.nav.navbar-nav
-            %li{class: current_page?(root_path) ? :active : ''}
-              = link_to 'Главная', root_path
-            %li{class: current_page?(about_path) ? :active : ''}
-              = link_to 'О проекте', about_path
+          %a.navbar-brand{href: root_path} Snippets Control System
+        #navbar.navbar-collapse.collapse
           %ul.nav.navbar-nav.navbar-right
+            %li{class: current_page?(snippets_path) ? :active : ''}
+              = link_to 'Сниппеты', snippets_path
+            %li{class: current_page?(users_path) ? :active : ''}
+              = link_to 'Пользователи', users_path
             %li
-              = link_to 'Войти', '#'
-    .container
-      = yield
+              = link_to 'Войти', '#'            
+    .container-fluid
+      .row
+        .col-sm-3.col-md-2.sidebar
+          %ul.nav.nav-sidebar
+            - Lang.all.each do |lang|
+              %li= link_to lang.title, '#'
+          %ul.nav.nav-sidebar
+            - Rubric.all.each do |rubric|
+              %li= link_to rubric.title, '#'
+      .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+        = yield
     = javascript_include_tag :application

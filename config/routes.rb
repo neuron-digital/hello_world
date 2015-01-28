@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root to: 'snippets#index'
 
-  get '/about' => 'snippets#about'
-
   index_and_show = [:index, :show]
 
   resources :snippets, only: index_and_show
