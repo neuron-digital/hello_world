@@ -32,8 +32,9 @@ def users
   users = (1..100).to_a.map do |user_number|
     {
       first_name: "Иван #{user_number}",
+      email:     "test_#{user_number}@example.com",
       last_name: "Коробков #{user_number}",
-      password: '321321'
+      password: '321321321'
     }
   end
   User.create(users)
@@ -41,7 +42,7 @@ end
 
 # Заполняем модель Snippet
 def snippets
-  usr = User.all
+  usr = User.all.to_a
   rbr = Rubric.all
   Lang.all.each do |lng|
     (50..100).to_a.sample.times do |snippet_number|
