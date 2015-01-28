@@ -5,10 +5,6 @@ gem 'will_paginate'
 
 # This gem integrates the Twitter Bootstrap pagination component with the will_paginate pagination gem.
 gem 'will_paginate-bootstrap'
-
-gem 'devise'
-gem 'omniauth-twitter'
-
 # Взаимодейтсвие с базой данных MySQL
 gem 'mysql2'
 # Комментарии к таблицам и столбцам базы данных

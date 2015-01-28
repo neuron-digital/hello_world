@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   root to: 'snippets#index'
 
   index_and_show = [:index, :show]
