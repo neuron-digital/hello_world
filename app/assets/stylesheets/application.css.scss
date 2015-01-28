@@ -2,11 +2,4 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-  padding-top: 50px;
-}
-
-#snippet-show {
-  text-align: center;
-  padding-top: 50px;
-}
+@import "shared/dashboard"

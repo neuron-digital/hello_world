@@ -1,3 +1,20 @@
-%tr
-  %td= snippet.id
-  %td= link_to snippet.title, snippet
+.col-lg-4
+  .panel.panel-default
+    .panel-heading
+      = snippet.title
+    .panel-body
+      - if snippet.user.present?
+        %h4 Автор
+        = link_to "#{snippet.user.first_name} #{snippet.user.last_name}", snippet.user
+      - if snippet.langs.present?
+        %h4 Языки
+        %ul
+        - snippet.langs.each do |lang|
+          %li
+            = lang.title
+      - if snippet.rubrics.present?
+        %h4 Рубрики
+        %ul
+        - snippet.rubrics.each do |rubric|
+          %li
+            = rubric.title

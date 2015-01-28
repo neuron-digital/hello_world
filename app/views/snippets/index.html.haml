@@ -1,7 +1,8 @@
 .row
   .col-xs-12
-    %table.table
-      %tr
-        %th ID
-        %th Название
-      = render @snippets
+    %h1.page-header Последние сниппеты
+.row
+  = render @snippets
+.row
+  .col-xs-12
+    = will_paginate @snippets, renderer: BootstrapPagination::Rails
