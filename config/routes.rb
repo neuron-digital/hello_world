@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'snippets#index'
 
-  get 'langs/:lang_id',     to: 'langs#show'
-  get 'rubrics/:rubric_id', to: 'rubrics#show'
+  get 'langs/:lang_id',     to: 'langs#show',   as: :lang
+  get 'rubrics/:rubric_id', to: 'rubrics#show', as: :rubric
 
   index_and_show = [:index, :show]
 
