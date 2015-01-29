@@ -32,10 +32,10 @@
         .col-sm-3.col-md-2.sidebar
           %ul.nav.nav-sidebar
             - Lang.all.each do |lang|
-              %li= link_to lang.title, '#'
+              %li= link_to lang.title, lang_path(lang)
           %ul.nav.nav-sidebar
             - Rubric.all.each do |rubric|
-              %li= link_to rubric.title, '#'
+              %li= link_to rubric.title, rubric_path(rubric)
       .col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
         = yield
     = javascript_include_tag :application

@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
+
+# Постраничная навигация
 gem 'will_paginate'
 
-# This gem integrates the Twitter Bootstrap pagination component with the will_paginate pagination gem.
+# Интегрирует постраничную навигацию из гема will_paginate и Twitter Bootstrap компонент постраничной навигации
 gem 'will_paginate-bootstrap'
 
+# Гем управления регистрацией и аутентификацией пользователей
 gem 'devise'
+# Аутентификация при помощи аккаунта социальной сети Twitter
 gem 'omniauth-twitter'
 
 # Взаимодейтсвие с базой данных MySQL
