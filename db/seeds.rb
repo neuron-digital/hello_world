@@ -42,6 +42,9 @@ end
 
 # Заполняем модель Snippet
 def snippets
+  # Очищаем таблицу snippets
+  Snippet.destroy_all
+  # Заполняем модель snippets
   usr = User.all.to_a
   rbr = Rubric.all
   Lang.all.each do |lng|
@@ -51,7 +54,8 @@ def snippets
         content: "Cниппет #{snippet_number} по #{lng.title}",
         user: usr.sample,
         rubrics: [rbr.sample, rbr.sample],
-        visibility: Snippet.visibilities[snippet_number % 3 == 0 ? :_private : :_public]
+        visibility: Snippet.visibilities[snippet_number % 3 == 0 ? :_private : :_public],
+        updated_at: Time.now + snippet_number
       })
     end
     lng.save
@@ -60,6 +64,9 @@ end
 
 # Заполняем логотипы языков программирования и пользователей
 def images
+  # Очищаем таблицу snippets
+  Image.destroy_all
+
   User.all.each do |usr|
     usr.build_image(
       upload_file_name: 'usr_logo.jpg',
