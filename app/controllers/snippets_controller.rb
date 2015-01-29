@@ -1,10 +1,14 @@
 class SnippetsController < ApplicationController
   before_action :find_user
 
+  # GET /snippets
+  # GET /users/:user_id/snippets
   def index
     @snippets = snippets.for_main.page params[:page]
   end
 
+  # GET /snippets/:id
+  # GET /users/:user_id/snippets/:id
   def show
     @snippet = snippets.find params[:id]
   end
