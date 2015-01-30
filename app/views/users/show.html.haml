@@ -1,0 +1,14 @@
+%h1
+  = link_to '',users_path, {class: 'glyphicon glyphicon-triangle-left back-to-users'} 
+  = @user.first_name + " " + @user.last_name
+  = mail_to @user.email do
+    %span.glyphicon.glyphicon-envelope.mail-to-user
+%div  
+  - if @snippets.size !=0
+    %h2 Сниппеты пользователя: 
+    - @snippets.each do |snp| 
+      %br
+      = link_to snp.title, snp
+  - else
+    У этого пользователя пока нет ни одного сниппета
+%div
