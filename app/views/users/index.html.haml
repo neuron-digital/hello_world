@@ -1,0 +1,27 @@
+.row
+  .col-xs-12
+    %h1.page-header Пользователи
+.row
+  .col-xs-6
+    %table.table
+      %tr
+        %th
+          = t('user')
+        %th
+          = t('snippets')
+      - @users.each_with_index do |user,i|
+        %tr{onclick:"window.location.href='#{user_path(user)}'; return false"}
+          = link_to user do
+            %td
+              %span.glyphicon.glyphicon-user 
+              = user.last_name + ' ' + user.first_name
+            %td
+              %span.glyphicon.glyphicon-file 
+              = user.snippets.size
+.row
+  .col-xs-12
+    = will_paginate @snippets, renderer: BootstrapPagination::Rails
+
+
+
+

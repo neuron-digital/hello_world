@@ -2,4 +2,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-@import "shared/dashboard"
+@import "shared/dashboard";
+
+.mail-to-user, .back-to-users{
+  color: #999;
+  &:hover{
+    color: #555;
+    text-decoration: none;
+  }
+}
+.mail-to-user{
+  font-size: 20px;
+  vertical-align: text-top;
+}
+
+tr:not(:first-child){
+  //text-decoration: underline;
+  &:hover{
+    background-color: #eee;
+    color: #555;
+    cursor: pointer;
+  }
+}
