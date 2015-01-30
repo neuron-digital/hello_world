@@ -38,8 +38,6 @@ http://192.168.122.2:3000
 
 ## Занятия
 
-* [Глоссарий](https://docs.google.com/document/d/1fDWQXeMoPRCXCUxWehRfZs-jAAcKX8HGtuGeN35JqFU)
-
 ### Занятие 1
 
 * [Алексей Авдеев. Фронтенд. Инструменты](https://www.dropbox.com/s/ojpfx6bfvnixoo8/01%20%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B.pptx?dl=0)
@@ -70,6 +68,14 @@ http://192.168.122.2:3000
 ### Занятие 6
 
 * [Игорь Симдянов. Многотабличные запросы](https://docs.google.com/presentation/d/1YyJM74tGQ_UXJF_73L6CfNVNAaIDwwUMuuEhmZXwH04/edit?usp=sharing)
+
+### Занятие 7
+
+* [Игорь Симдянов. Паттерны и антипаттерны](https://docs.google.com/presentation/d/12dJiIxGAUSPyBG9BAHGBE7zq3GsWRdG6z7Oox-ybBPI/edit?usp=sharing)
+
+## Глоссарий
+
+* [Глоссарий](https://docs.google.com/document/d/1fDWQXeMoPRCXCUxWehRfZs-jAAcKX8HGtuGeN35JqFU)
 
 ## Список литературы
 
