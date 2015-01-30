@@ -1,9 +1,0 @@
-ru:
-  views:
-    users:
-      list: Список пользователей
-      header: Информация о пользователе
-      login_count: Количество входов
-      last_name: Фамилия
-      first_name: Имя
-      email: Электронная почта
