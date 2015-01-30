@@ -1,0 +1,24 @@
+.row
+  .col-xs-12
+    %h1.page-header
+      = t('views.users.header')
+  .row
+    .col-xs-3
+      = t('views.users.email')
+    .col-xs-2
+      = @user.email
+  .row
+    .col-xs-3
+      = t('views.users.first_name')
+    .col-xs-2
+      = @user.first_name
+  .row
+    .col-xs-3
+      = t('views.users.last_name')
+    .col-xs-2
+      = @user.last_name
+  .row
+    .col-xs-3
+      = t('views.users.login_count')
+    .col-xs-2
+      = @user.sign_in_count
