@@ -1,0 +1,8 @@
+.row
+  .col-xs-12
+    %h1.page-header Мои сниппеты
+.row
+  .col-xs-12
+    = link_to 'Создать сниппет', new_my_snippet_path, class: 'btn btn-default'
+.row
+  = render collection: @user.snippets, partial: 'snippets/snippet'

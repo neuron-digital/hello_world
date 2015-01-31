@@ -1,11 +1,14 @@
 module CurrentUser
   class SnippetsController < ::SnippetsController
+    def index ; end
+
     def new
-      @snipept = Snippet.new
+      @snippet = Snippet.new
     end
 
     def create
-      @snippet = @user.snippets.create snippets_params
+      @user.snippets.create snippets_params
+      redirect_to action: :index
     end
 
     def edit

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   root to: 'snippets#index'
 
   get 'langs/:lang_id',     to: 'langs#show',   as: :lang

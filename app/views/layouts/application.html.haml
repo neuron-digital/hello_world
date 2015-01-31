@@ -1,5 +1,5 @@
 !!!
-%html{:lang => "en"}
+%html{:lang => "ru"}
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
@@ -25,8 +25,14 @@
               = link_to 'Сниппеты', snippets_path
             %li{class: current_page?(users_path) ? :active : ''}
               = link_to 'Пользователи', users_path
-            %li
-              = link_to 'Войти', '#'            
+            - if user_signed_in?
+              %li
+                = link_to 'Моя страница', my_snippets_path
+              %li
+                = link_to 'Выйти', destroy_user_session_path, method: :delete
+            - else
+              %li
+                = link_to 'Войти', user_omniauth_authorize_path(provider: :twitter)
     .container-fluid
       .row
         .col-sm-3.col-md-2.sidebar
