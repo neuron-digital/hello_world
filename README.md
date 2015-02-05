@@ -73,6 +73,10 @@ http://192.168.122.2:3000
 
 * [Игорь Симдянов. Паттерны и антипаттерны](https://docs.google.com/presentation/d/12dJiIxGAUSPyBG9BAHGBE7zq3GsWRdG6z7Oox-ybBPI/edit?usp=sharing)
 
+### Занятие 8
+
+* [Игорь Симдянов. Оптимизация запросов и настройка MySQL](https://docs.google.com/presentation/d/1wJZG21uQABhG5khE6Du83uTqnzJmN2U42LZTUhC6ysw/edit?usp=sharing)
+
 ## Глоссарий
 
 * [Глоссарий](https://docs.google.com/document/d/1fDWQXeMoPRCXCUxWehRfZs-jAAcKX8HGtuGeN35JqFU)
