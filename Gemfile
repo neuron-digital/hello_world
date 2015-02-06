@@ -80,3 +80,7 @@ group :test do
   # Управление очисткой базы данных
   gem 'database_cleaner'
 end
+
+group :production do 
+  gem 'unicorn'
+end
