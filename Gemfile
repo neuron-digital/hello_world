@@ -53,6 +53,12 @@ group :development, :test do
   gem 'spring'
   # Создание произвольных текстов (для seeds.rb)
   gem 'faker'
+  # Деплой проекта на сервер
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
 end
 
 group :test do
