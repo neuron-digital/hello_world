@@ -63,6 +63,10 @@ group :development do
   gem 'capistrano3-unicorn'
 end
 
+group :production do 
+  gem 'unicorn'
+end
+
 group :test do
   # Вместо традиционных тестов, используем rspec
   gem 'rspec'
