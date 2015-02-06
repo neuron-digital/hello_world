@@ -1,4 +1,4 @@
-deploy_to  = "/var/www/hello_world"
+deploy_to  = "/var/www/hello.nnbs.ru"
 rails_root = "#{deploy_to}/current"
 pid_file   = "#{deploy_to}/shared/tmp/pids/unicorn.pid"
 socket_file= "#{deploy_to}/shared/unicorn.sock"
