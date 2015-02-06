@@ -15,6 +15,8 @@ set :ssh_options, {
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 set :keep_releases, 3
 
+after :updated, 'assets:precompile'
+
 namespace :assets do
   desc 'Local assets precompilation'
   task :precompile do
