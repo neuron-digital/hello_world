@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:Go-Promo/hello_world.git'
 set :git_shallow_clone, 1
 set :scm_verbose, true
 set :ssh_options, {
-  user: 'expoelektra',
+  user: 'hello',
   forward_agent: true,
   keys: %w(~/.ssh/id_rsa)
 }
