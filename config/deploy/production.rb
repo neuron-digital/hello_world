@@ -1,7 +1,7 @@
 set :rails_env, 'production'
 
 set :deploy_to, '/var/www/hello.nnbs.ru'
-
+set :assets_roles, [:app]
 set :unicorn_config_path, "#{fetch(:deploy_to)}/current/config/unicorn/production.rb"
 set :unicorn_pid, "#{fetch(:deploy_to)}/shared/tmp/pids/unicorn.pid"
 
